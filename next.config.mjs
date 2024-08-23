@@ -9,6 +9,9 @@ const nextConfig = {
 };
 
 const withMDX = createMDX({
+  // NOTE: by default mdx will only match and compile files with the .mdx extension. however, it can be configured to handle files with the .md extension too.
+  //       source: https://www.npmjs.com/package/@next/mdx.
+  extension: /\.(md|mdx)$/,
   // Add markdown plugins here, as desired
 });
 
