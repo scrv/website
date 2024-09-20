@@ -53,7 +53,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      # NOTE: omitting this step because it appears to be overwriting the project's `next.config.mjs` which leads to building errors. 
+      # NOTE: omitting this step because it appears to be overwriting the project's `next.config.mjs` which leads to building errors.
       #       detailed explanation here: https://github.com/vercel/next.js/issues/58637.
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
